@@ -23,11 +23,17 @@ import Values from "./Values";
 
 const Home = () => {
   return (
-    <div className="px-16  max-md:px-11 py-28 max-sm:px-8 max-[250px]:px-2">
-      <FirstBanner />
-      <About />
-      <Values />
-    </div>
+    <>
+      <div className="px-16 max-md:px-11 max-sm:px-8 max-[250px]:px-2 py-28">
+        <FirstBanner />
+        <About />
+        <Values />
+      </div>
+      <BGImage />
+      <div className="px-16  max-md:px-11 max-sm:px-8 max-[250px]:px-2 py-28">
+        Hello
+      </div>
+    </>
   );
 };
 
@@ -255,3 +261,46 @@ export const Brands: BRAND[] = [
     name: "Zenefits",
   },
 ];
+
+export const BGImage = () => {
+  return (
+    <div className="relative bg-[url('/bg.webp')] text-white justify-between bg-cover bg-no-repeat">
+      <div className="absolute z-0 top-0 left-0 w-full h-full bg-black/20" />
+      <div className=" px-16 max-md:px-11 flex-wrap items-center max-sm:px-8 max-[250px]:px-2 max-[950px]:h-[60vh] relative h-[45vh] w-full flex z-[1] py-1">
+        <motion.div
+          variants={XSlideIn(-310, 0.8, 0.6, 0.5)}
+          whileInView={"show"}
+          initial={"hidden"}
+          className="flex items-center-safe gap-6 flex-wrap"
+        >
+          <div className="flex flex-col gap-4">
+            <span className="text-[min(10vw,80px)] font-medium">$14B</span>
+            <p className="text-gray-200 font-medium">Funds and Syndicates</p>
+          </div>
+          <div>
+            <span className="text-[min(10vw,80px)] font-medium">23K+</span>
+            <p className="text-gray-200 font-medium">
+              Raised by active startups
+            </p>
+          </div>
+        </motion.div>
+
+        <motion.div
+          variants={XSlideIn(310, 0.8, 0.6, 0.5)}
+          whileInView={"show"}
+          initial={"hidden"}
+          className="pt-4 -mt-20 max-[1500px]:mt-0 max-md:w-full flex  text-left max-md:text-right justify-end "
+        >
+          <div className="flex flex-col-reverse w-[70%] max-[1400px]:w-full justify-end items-end  text-right ">
+            <span className="text-[min(10vw,60px)] w-full text-balance font-medium">
+              Market and build the solutions
+            </span>
+            <p className="text-gray-200/95 pl-28 max-[1400px]:pl-0 font-medium text-left max-[950px]:text-right w-full">
+              NUMBERS
+            </p>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
+};
