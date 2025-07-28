@@ -3,6 +3,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { useState, type ReactElement } from "react";
 import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import { motion } from "framer-motion";
+import { GiCircleClaws, GiMaterialsScience } from "react-icons/gi";
 
 const Values = () => {
   const [Sindex, setSindex] = useState(2);
@@ -95,12 +96,12 @@ export const ValuesArray: VALUES[] = [
     ttile: "Transparency",
   },
   {
-    icon: <HiOutlineSquares2X2 />,
+    icon: <GiMaterialsScience />,
     text: "Ascone propietary fintech platform helps our subsidiaries locate and manage investments.",
     ttile: "Creative Expansion",
   },
   {
-    icon: <HiOutlineSquares2X2 />,
+    icon: <GiCircleClaws />,
     text: "We provide access to unique private credit investments a rare but valueable part  of a sound investment portfolio",
     ttile: "Private Credit Investments",
   },

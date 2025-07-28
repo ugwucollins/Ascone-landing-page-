@@ -20,6 +20,7 @@ import { RiOpenaiFill } from "react-icons/ri";
 import { BiLogoAudible } from "react-icons/bi";
 import { DiZend } from "react-icons/di";
 import Values from "./Values";
+import FAQ from "./FAQ";
 
 const Home = () => {
   return (
@@ -31,7 +32,7 @@ const Home = () => {
       </div>
       <BGImage />
       <div className="px-16  max-md:px-11 max-sm:px-8 max-[250px]:px-2 py-28">
-        Hello
+        <FAQ />
       </div>
     </>
   );

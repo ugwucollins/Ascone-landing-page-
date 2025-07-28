@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { boxcolor1, boxcolor2, YSlideIn } from "./assets";
+import { boxcolor1, boxcolor2, Photos, YSlideIn } from "./assets";
 import { FaArrowUp } from "react-icons/fa6";
+import { PiGlobeLight } from "react-icons/pi";
 
 const About = () => {
   return (
@@ -76,10 +77,83 @@ const About = () => {
               Send across the global
             </h1>
 
-            <div className="w-full absolute bottom-10 flex flex-wrap justify-center gap-2">
-              <div>Hello</div>
-              <div>Hello</div>
-              <div>Hello</div>
+            <div className="w-full justify-center items-center flex absolute  left-1/2 -translate-x-1/2 top-20">
+              <div className="max-md:size-58 size-[25vw] ring-1 flex justify-center items-center ring-gray-400/75 rounded-full bg-transparent">
+                <div className="max-md:size-44 ring-1 size-[18vw] flex justify-center items-center ring-gray-400/75 rounded-full bg-transparent">
+                  <div className="size-30 ring-1 ring-gray-400/75 rounded-full bg-transparent" />
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full absolute bottom-10 max-sm:bottom-2 flex flex-wrap max-sm:justify-center gap-2 px-2 py-2 justify-around">
+              <div className="flex flex-col gap-1 items-start">
+                <div className="flex flex-col w-[150px]">
+                  <img src={Photos.money} alt="money image" />
+                  <div className="bg-white p-3">
+                    <h1
+                      className="text-[min(5vw,20px)] font-medium"
+                      style={{ color: boxcolor1 }}
+                    >
+                      $25,000
+                    </h1>
+                    <p>Sent bro</p>
+                  </div>
+                </div>
+                <div className="flex">
+                  <img
+                    src={Photos.customers3}
+                    className="w-10 h-10 ring-1 ring-white rounded-full "
+                    alt="customers imgae"
+                  />
+                  <img
+                    src={Photos.customers2}
+                    className="w-10 h-10 ring-1 ring-white rounded-full "
+                    alt="customers imgae"
+                  />
+                </div>
+              </div>
+
+              <div className="relative">
+                <PiGlobeLight
+                  className="text-[min(20vw,150px)] absolute  -left-24 -bottom-10 pt-1 capitalize  font-extralight"
+                  style={{ color: boxcolor1 }}
+                />
+              </div>
+              <div className="flex flex-col gap-y-14 max-sm:gap-5">
+                <div className="flex flex-col text-left gap-0.5">
+                  <div
+                    className="py-3 px-5 text-white font-medium"
+                    style={{ backgroundColor: boxcolor1 }}
+                  >
+                    <h1 className="text-[min(5vw,20px)]  font-medium">
+                      $40,000
+                    </h1>
+                    <p>Thanks Chirs</p>
+                  </div>
+                  <img
+                    src={Photos.customers3}
+                    className="w-10 h-10 ring-1 ring-white rounded-full "
+                    alt="customers imgae"
+                  />
+                </div>
+                <div className="flex items-center-safe justify-end">
+                  <img
+                    src={Photos.flag}
+                    alt="customers image"
+                    className="size-10 ring-2  ring-white rounded-full"
+                  />
+                  <img
+                    src={Photos.customers2}
+                    alt="customers image"
+                    className="size-10 ring-2 -ml-1.5 ring-white rounded-full"
+                  />
+                  <img
+                    src={Photos.customers3}
+                    alt="customers image"
+                    className="size-10 ring-2 -ml-1.5 ring-white rounded-full"
+                  />
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
