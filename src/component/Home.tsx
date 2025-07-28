@@ -20,7 +20,7 @@ import { RiOpenaiFill } from "react-icons/ri";
 import { BiLogoAudible } from "react-icons/bi";
 import { DiZend } from "react-icons/di";
 import Values from "./Values";
-import FAQ from "./FAQ";
+import FAQ, { BGImage2 } from "./FAQ";
 
 const Home = () => {
   return (
@@ -33,6 +33,7 @@ const Home = () => {
       <BGImage />
       <div className="px-16  max-md:px-11 max-sm:px-8 max-[250px]:px-2 py-28">
         <FAQ />
+        <BGImage2 />
       </div>
     </>
   );
@@ -269,7 +270,7 @@ export const BGImage = () => {
       <div className="absolute z-0 top-0 left-0 w-full h-full bg-black/20" />
       <div className=" px-16 max-md:px-11 flex-wrap items-center max-sm:px-8 max-[250px]:px-2 max-[950px]:h-[60vh] relative h-[45vh] w-full flex z-[1] py-1">
         <motion.div
-          variants={XSlideIn(-310, 0.8, 0.6, 0.5)}
+          variants={XSlideIn(-300, 0.8, 0.6, 0.5)}
           whileInView={"show"}
           initial={"hidden"}
           className="flex items-center-safe gap-6 flex-wrap"
@@ -287,7 +288,7 @@ export const BGImage = () => {
         </motion.div>
 
         <motion.div
-          variants={XSlideIn(310, 0.8, 0.6, 0.5)}
+          variants={XSlideIn(300, 0.8, 0.6, 0.5)}
           whileInView={"show"}
           initial={"hidden"}
           className="pt-4 -mt-20 max-[1500px]:mt-0 max-md:w-full flex  text-left max-md:text-right justify-end "

@@ -94,7 +94,7 @@ export const Mobile = ({ selectedIndex, setselectedIndex }: any) => {
 
       {open && (
         <motion.div
-          variants={XSlideIn(500, 0.8, 0.1, 0.1)}
+          variants={XSlideIn(300, 1, 0.1, 0.1)}
           whileInView={"show"}
           initial={"hidden"}
           className="transition-all z-[2] duration-200 fixed top-16 h-full w-full min-h-screen"

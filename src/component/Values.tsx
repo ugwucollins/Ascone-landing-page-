@@ -1,9 +1,10 @@
-import { boxcolor1, boxcolor3, YSlideIn } from "./assets";
+import { boxcolor1, boxcolor3, ValuesArray, YSlideIn } from "./assets";
 import { FiArrowUpRight } from "react-icons/fi";
 import { useState, type ReactElement } from "react";
 import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import { motion } from "framer-motion";
 import { GiCircleClaws, GiMaterialsScience } from "react-icons/gi";
+import type { VALUES } from "../lib/types";
 
 const Values = () => {
   const [Sindex, setSindex] = useState(2);
@@ -83,26 +84,3 @@ const Values = () => {
 };
 
 export default Values;
-type VALUES = {
-  icon: ReactElement;
-  ttile: string;
-  text: string;
-};
-
-export const ValuesArray: VALUES[] = [
-  {
-    icon: <HiOutlineSquares2X2 />,
-    text: "A departure from the industry norm of ambiguity, Montfort, as a public and finest company.",
-    ttile: "Transparency",
-  },
-  {
-    icon: <GiMaterialsScience />,
-    text: "Ascone propietary fintech platform helps our subsidiaries locate and manage investments.",
-    ttile: "Creative Expansion",
-  },
-  {
-    icon: <GiCircleClaws />,
-    text: "We provide access to unique private credit investments a rare but valueable part  of a sound investment portfolio",
-    ttile: "Private Credit Investments",
-  },
-];
