@@ -46,11 +46,13 @@ const FAQ = () => {
                     : "shadow drop-shadow"
                 }`}
               >
-                <h1 className="text-base font-semibold">{item.title}</h1>
+                <h1 className="text-base font-semibold text-black ">
+                  {item.title}
+                </h1>
                 {selectIndex === index ? (
-                  <BiX className="text-2xl cursor-pointer" />
+                  <BiX className="text-2xl cursor-pointer text-black " />
                 ) : (
-                  <FaPlus />
+                  <FaPlus className="text-black " />
                 )}
               </div>
               {selectIndex === index && (
