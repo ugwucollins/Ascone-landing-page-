@@ -53,7 +53,7 @@ const Values = () => {
                 backgroundColor: `${index === Sindex ? boxcolor3 : "white"}`,
               }}
             >
-              <span className="text-4xl">{item.icon}</span>
+              <span className="text-4xl text-black">{item.icon}</span>
               <div>
                 <h1
                   className="text-[min(5vw,18px)] font-semibold capitalize py-3"
