@@ -1,9 +1,7 @@
 import { boxcolor1, boxcolor3, ValuesArray, YSlideIn } from "./assets";
 import { FiArrowUpRight } from "react-icons/fi";
-import { useState, type ReactElement } from "react";
-import { HiOutlineSquares2X2 } from "react-icons/hi2";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { GiCircleClaws, GiMaterialsScience } from "react-icons/gi";
 import type { VALUES } from "../lib/types";
 
 const Values = () => {

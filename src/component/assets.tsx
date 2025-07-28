@@ -1,7 +1,6 @@
 import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import type { FAQs, MenusProp, VALUES } from "../lib/types";
 import { GiCircleClaws, GiMaterialsScience } from "react-icons/gi";
-import { text } from "framer-motion/client";
 
 const customers = "/cu.jpg";
 const customers1 = "/cu1.jpg";
