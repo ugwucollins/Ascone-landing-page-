@@ -27,7 +27,7 @@ const About = () => {
           </p>
         </motion.div>
 
-        <div className="flex flex-row max-[0px]:flex-col gap-3 items-center justify-center">
+        <div className="flex flex-row max-[0px]:flex-col gap-3 items-center justify-center overflow-hidden">
           <motion.div
             variants={YSlideIn(100, 0.5, 0.5, 0.6)}
             whileInView={"show"}
@@ -39,11 +39,11 @@ const About = () => {
               Grow Savings Faster
             </h1>
             <div className="flex absolute gap-0 bottom-10 w-full justify-center flex-row">
-              <div className="gap-4 justify-center items-end flex ">
+              <div className="gap-4 max-sm:gap-2.5 justify-center items-end flex ">
                 {[1, 2, 3].map((item, index: number) => (
                   <div
                     key={index}
-                    className="w-3 bg-gray-300"
+                    className="w-3 max-sm:w-1.5 bg-gray-300"
                     style={{ height: 20 * item }}
                   />
                 ))}
@@ -54,11 +54,11 @@ const About = () => {
                 </h1>
                 <FaArrowUp className="text-gray-300 text-[100px]" />
               </div>
-              <div className="gap-5 items-end flex -ml-3.5 ">
+              <div className="gap-5 max-sm:gap-2.5 items-end flex -ml-3.5 ">
                 {[2, 5].map((item, index: number) => (
                   <div
                     key={index}
-                    className="w-3 bg-gray-300"
+                    className="w-3 max-sm:w-1.5 bg-gray-300"
                     style={{ height: 15 * item }}
                   />
                 ))}

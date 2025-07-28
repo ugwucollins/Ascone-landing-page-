@@ -81,12 +81,12 @@ export const Mobile = ({ selectedIndex, setselectedIndex }: any) => {
         <Logo />
         {open ? (
           <FiX
-            className="text-2xl transition-all duration-200 font-bold cursor-pointer"
+            className="text-2xl text-black transition-all duration-200 font-bold cursor-pointer"
             onClick={handleClose}
           />
         ) : (
           <RxHamburgerMenu
-            className="text-2xl transition-all duration-200 font-bold cursor-pointer"
+            className="text-2xl transition-all text-black  duration-200 font-bold cursor-pointer"
             onClick={handleClose}
           />
         )}

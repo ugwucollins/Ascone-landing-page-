@@ -32,7 +32,7 @@ const FAQ = () => {
           const even = index % 2 === 0;
           return (
             <motion.div
-              variants={XSlideIn(even ? -300 : 300, 0.8, 0.6, index)}
+              variants={XSlideIn(even ? -200 : 200, 1, 0.5, index)}
               whileInView={"show"}
               initial={"hidden"}
               className="flex flex-col px-2 py-2 gap-3 text-left"
